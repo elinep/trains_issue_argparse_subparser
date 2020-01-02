@@ -1,2 +1,2 @@
-trains
+trains==0.13.0rc2
 trains-agent

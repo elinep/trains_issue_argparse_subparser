@@ -14,9 +14,9 @@ def build_parser():
 
 if __name__ == '__main__':
     # create task
-    task = Task.init(project_name='argparser_issue', task_name='test')
+    task = Task.init(project_name='argparser_issue', task_name='test-fix-0.13.0rc2')
     # set manualy requirements, auto detection will timeout
-    task._update_requirements("trains")
+    task._update_requirements("trains==0.13.0rc2")
 
     parser = build_parser()
     args = parser.parse_args()
